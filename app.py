@@ -30,8 +30,6 @@ st.markdown(
     """
     <p style='text-align:center; font-size:18px;'>
     Selamat Hari Senin yaa ☀️<br>
-    Semangat jalanin magangnya hari ini 🌱<br>
-    Aku tahu kamu capek, tapi kamu hebat banget.
     </p>
     """,
     unsafe_allow_html=True
