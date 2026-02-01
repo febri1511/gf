@@ -24,7 +24,7 @@ st.markdown("<h1 style='text-align:center;'>Hai Kamu 💖</h1>", unsafe_allow_ht
 st.markdown(
     """
     <p style='text-align:center; font-size:18px;'>
-    Semangat ya magangny🌱 <br>
+    Semangat ya magangnya🌱 <br>
     Aku tahu kamu capek, tapi kamu hebat banget.
     </p>
     """,
