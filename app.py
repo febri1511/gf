@@ -52,9 +52,9 @@ if st.button("Klik aku 💌"):
         """
         <p style='text-align:center; font-size:17px;'>
         Jangan lupa senyum hari ini 🤍<br>
-        Semangat magangnya seng 🌿<br>
+        Semangat magangnya seng 💖<br>
         Aku selalu doain kamu dari sini.<br><br>
-        <b>Aku bangga sama kamu, selamat menjalani hari Senin 😘</b>
+        <b>Aku bangga sama kamu, lopyu se-UNPAKKKKKK😘</b>
         </p>
         """,
         unsafe_allow_html=True
