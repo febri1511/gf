@@ -63,6 +63,6 @@ if st.button("Klik aku 💌"):
 # Footer
 st.markdown("<br>", unsafe_allow_html=True)
 st.markdown(
-    "<p style='text-align:center; font-size:12px;'>Dibuat dengan ❤️ oleh febrianscah</p>",
+    "<p style='text-align:center; font-size:12px;'>Dibuat dengan ❤️ oleh Febrianscah</p>",
     unsafe_allow_html=True
 )
