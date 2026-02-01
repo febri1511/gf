@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Buat Kamu 💖</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background: linear-gradient(135deg, #ff9a9e, #fad0c4);
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .card {
+      background: white;
+      width: 90%;
+      max-width: 400px;
+      border-radius: 20px;
+      padding: 30px;
+      text-align: center;
+      box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+      animation: fadeIn 1.5s ease;
+    }
+
+    h1 {
+      color: #ff5e78;
+      margin-bottom: 10px;
+    }
+
+    p {
+      color: #555;
+      line-height: 1.6;
+      font-size: 16px;
+    }
+
+    .heart {
+      font-size: 40px;
+      animation: heartbeat 1.5s infinite;
+    }
+
+    button {
+      margin-top: 20px;
+      padding: 12px 25px;
+      border: none;
+      border-radius: 30px;
+      background: #ff5e78;
+      color: white;
+      font-size: 16px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    button:hover {
+      background: #ff2f55;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    @keyframes heartbeat {
+      0% { transform: scale(1); }
+      50% { transform: scale(1.2); }
+      100% { transform: scale(1); }
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="card">
+    <div class="heart">💖</div>
+    <h1>Hai Kamu!</h1>
+
+    <p>
+      Semangat ya magangnya🌱<br>
+      Aku tau kamu capek, tapi kamu hebat banget.
+    </p>
+
+    <button onclick="showMessage()">Klik aku 💌</button>
+
+    <p id="extraMessage" class="hidden">
+      Aku selalu doain kamu dari sini 🤍<br>
+      Jangan lupa istirahat, makan yang cukup,<br>
+      dan ingat… kamu nggak sendirian.<br><br>
+      <strong>Aku bangga sama kamu 😘</strong>
+    </p>
+  </div>
+
+  <script>
+    function showMessage() {
+      document.getElementById("extraMessage").classList.remove("hidden");
+    }
+  </script>
+
+</body>
+</html>
+
