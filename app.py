@@ -19,7 +19,7 @@ st.markdown(
     unsafe_allow_html=True
 )
 
-st.markdown("<h1 style='text-align:center;'>Hai Kamu 💖</h1>", unsafe_allow_html=True)
+st.markdown("<h1 style='text-align:center;'>Hai Sengg 💖</h1>", unsafe_allow_html=True)
 
 st.markdown(
     """
@@ -53,6 +53,6 @@ if st.button("Klik aku 💌"):
 
 st.markdown("<br>", unsafe_allow_html=True)
 st.markdown(
-    "<p style='text-align:center; font-size:12px;'>Dibuat dengan ❤️ oleh pacarmu</p>",
+    "<p style='text-align:center; font-size:12px;'>Dibuat dengan ❤️ oleh febrianscah</p>",
     unsafe_allow_html=True
 )
