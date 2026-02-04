@@ -100,4 +100,4 @@ if st.button("💌 Klik aku dong"):
     st.balloons()
 
 st.markdown("---")
-st.caption("Dibuat dengan ❤️ oleh mas-mas IT orang Kalong wkwk")
+st.caption("Dibuat dengan ❤️ oleh mas-mas IT orang Kalong😁")
