@@ -87,13 +87,12 @@ for _ in range(10):
 
 # ================= KONTEN =================
 st.title("Hi Seng❤️ ada pesan baru nih! 💌")
-st.write("Klik tombolnya ya 😆💖")
 
 pesan_bucin = [
     "Semangat magangnya hari ini yaa ❤️",
 ]
 
-if st.button("💖 Klik aku dong"):
+if st.button("💌 Klik aku dong"):
     with st.spinner("Lagi nyiapin pesan bucin... 💌"):
         time.sleep(1.2)
 
