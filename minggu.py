@@ -7,7 +7,7 @@ st.set_page_config(
     layout="centered"
 )
 
-# CSS
+# ================= CSS =================
 st.markdown("""
 <style>
 .envelope {
@@ -15,72 +15,61 @@ st.markdown("""
     text-align: center;
 }
 
-.message-box {
-    background-color: #ffeef5;
-    padding: 35px;
-    border-radius: 22px;
-    border: 2px solid #ff7eb3;
-    text-align: center;
-    color: #000;
-}
-
-.message-box h2,
-.message-box p,
-.message-box b {
-    color: #000;
-}
-
-.message-box p {
-    font-size: 17px;
-    line-height: 1.7;
-}
-
-.heart {
-    font-size: 30px;
+img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 20px;
+    border: 4px solid #ff7eb3;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.25);
 }
 </style>
 """, unsafe_allow_html=True)
 
+# ================= HEADER =================
 st.title("💖 Sebuah Amplop Untuk Kamu")
 st.write("Klik amplopnya yaa… ada sesuatu di dalamnya 🥰")
 
+# ================= STATE =================
 if "opened" not in st.session_state:
     st.session_state.opened = False
 
-# AMPL0P TERTUTUP
+# ================= AMPL0P TERTUTUP =================
 if not st.session_state.opened:
-    st.markdown('<div class="envelope">💌</div>', unsafe_allow_html=True)
+    st.markdown("<div class='envelope'>💌</div>", unsafe_allow_html=True)
 
     if st.button("📩 Buka Amplop"):
         st.session_state.opened = True
         st.rerun()
 
-# AMPL0P TERBUKA
+# ================= AMPL0P TERBUKA =================
 else:
-    st.markdown('<div class="envelope">💖</div>', unsafe_allow_html=True)
+    st.markdown("<div class='envelope'>💖</div>", unsafe_allow_html=True)
     time.sleep(0.3)
     st.balloons()
 
+    # FOTO TENGAH
+    st.image("fotokita.jpeg", width=260)
+
+    # PESAN (TANPA KOTAK)
+    st.markdown("## 💗 Selamat Hari Minggu, Seng 🌸")
     st.markdown("""
-    <div class="message-box">
-        <div class="heart">💗 💕 💖
+    Semoga hari ini hatimu tenang,  
+    senyummu nggak hilang,  
+    dan capekmu pelan-pelan menghilang 🤍
+    """)
 
-        Selamat Hari Minggu, Seng 🌸
-        
-            Semoga hari ini hatimu tenang,
-            senyummu nggak hilang,
-            dan capekmu pelan-pelan menghilang 🤍
-        
-            Semangat ngerjain tugasnya yaa 📝✨
-            Aku tau kamu lagi berjuang,
-            dan aku selalu bangga sama kamu 💞
-        
-            Jangan lupa istirahat,
-            banyak minum air putih,
-            dan inget… ada aku yang selalu sayang kamu 💘
-        
-        💗 💕 💖
-    
-    """, unsafe_allow_html=True)
+    st.markdown("""
+    **Semangat ngerjain tugasnya yaa 📝✨**  
+    Aku tau kamu lagi berjuang,  
+    dan aku selalu bangga sama kamu 💞
+    """)
 
+    st.markdown("""
+    Jangan lupa istirahat,  
+    banyak minum air putih,  
+    dan inget… ada aku yang selalu sayang kamu 💘
+    """)
+
+    st.markdown("💗 💕 💖")
     st.caption("— Dari Febri, yang selalu jatuh cinta sama Nadia setiap hari 🖤")
